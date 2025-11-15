@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: regulens-backend
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+
+kafka:
+  bootstrap-servers: localhost:9092
+  username: ${UPSTASH_KAFKA_USERNAME:}
+  password: ${UPSTASH_KAFKA_PASSWORD:}

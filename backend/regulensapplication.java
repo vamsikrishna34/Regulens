@@ -1,4 +1,4 @@
-package com.regulens;
+package com.Regulens;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
