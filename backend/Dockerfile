@@ -17,9 +17,7 @@ COPY src ./src
 # Build fat JAR (Spring Boot)
 RUN ./mvnw clean package -DskipTests --no-transfer-progress
 
-# ==============================
-# Stage 2: Runtime
-# ==============================
+
 FROM eclipse-temurin:17-jre-alpine
 
 # Create non-root user (HF best practice)
